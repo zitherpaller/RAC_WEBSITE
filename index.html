@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotaract Club of RTU</title>
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" role="status" aria-label="Loading">
+  <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span>
+  <span class="spark s4"></span><span class="spark s5"></span><span class="spark s6"></span>
+  <span class="heart h1"></span><span class="heart h2"></span><span class="heart h3"></span>
+
+  <div class="mascot-stage">
+    <div class="bubble" aria-hidden="true">Greetings,<br>RAC-Star!</div>
+    <span class="wk wk-star" aria-hidden="true">✦</span><span class="wk wk-heart" aria-hidden="true">♥</span><span class="wk wk-star2" aria-hidden="true">✦</span>
+    <div class="mascot" aria-hidden="true">
+      <img class="m-open" src="img/rac-star.png" alt="" width="700" height="699" decoding="async">
+      <img class="m-wink" src="img/rac-star-wink.png" alt="" width="700" height="699" decoding="async">
+    </div>
+    <span class="sr-only">Greetings, RAC-Star!</span>
+  </div>
+</div>
+
+<div class="progress" aria-hidden="true"></div>
+<a class="skip" href="#welcome">Skip to content</a>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="brand" aria-label="Rotaract Club of RTU, home">
+      <img class="brand-mark" src="img/Logo.png" alt="" width="40" height="40">
+      <span class="brand-text"><b>RAC-RTU</b></span>
+    </a>
+    <nav class="links" id="menu" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      <div class="dd"><a href="racstory.html" class="dd-top">RACStory</a><button class="dd-btn" type="button" aria-label="Show RACStory links" aria-expanded="false"><svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="dd-menu"><a href="racstory.html#our-roots">Our Roots</a><a href="racstory.html#our-impact">Our Impact</a><a href="racstory.html#our-journey">Our Journey</a></div></div>
+      <div class="dd"><a href="racfam.html" class="dd-top">RACFam</a><button class="dd-btn" type="button" aria-label="Show RACFam links" aria-expanded="false"><svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="dd-menu"><a href="racfam.html#officers">Officers</a><a href="racfam.html#members">Members</a><a href="racfam.html#advisers">Advisers</a><a href="racfam.html#past-presidents">Past Presidents</a></div></div>
+      <div class="dd"><a href="rotarchives.html" class="dd-top">ROTArchives</a><button class="dd-btn" type="button" aria-label="Show ROTArchives links" aria-expanded="false"><svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="dd-menu"><a href="rotarchives.html#latest-dispatches">Latest Dispatches</a><a href="rotarchives.html#in-retrospect">In Retrospect</a><a href="rotarchives.html#voices-perspectives">Voices &amp; Perspectives</a><a href="rotarchives.html#milestones-memories">Milestones &amp; Memories</a><a href="rotarchives.html#then-there">Then, There: A Look Back</a><a href="rotarchives.html#jumpshots">Jumpshots</a></div></div>
+      <div class="dd"><a href="raconnect.html" class="dd-top">RAConnect</a><button class="dd-btn" type="button" aria-label="Show RAConnect links" aria-expanded="false"><svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="dd-menu"><a href="raconnect.html#reach-out">Reach Out</a><a href="raconnect.html#partnerships">Partnerships &amp; Collaborations</a><a href="raconnect.html#work-with-us">Work With Us</a><a href="raconnect.html#support">Support Our Initiatives</a><a href="raconnect.html#find-us-online">Find Us Online</a></div></div>
+      <a href="join.html" class="">Join Us</a>
+      <a class="links-fb" href="https://www.facebook.com/RAC.RTU" target="_blank" rel="noopener">Facebook</a>
+    </nav>
+    <a class="nav-cta" href="https://www.facebook.com/RAC.RTU" target="_blank" rel="noopener"><span>Facebook</span><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- WELCOME -->
+  <section class="welcome" id="welcome">
+    <i class="float f4"></i>
+
+    <div class="orbit rosette" aria-hidden="true">
+      <span class="rs-glow"></span>
+      <div class="rs-float">
+        <div class="rs-char">
+          <img class="rs-layer rs-base" src="img/rosette.png" alt="" width="900" height="900">
+          <img class="rs-layer rs-hair rs-hair-l" src="img/rosette.png" alt="" width="900" height="900">
+          <img class="rs-layer rs-hair rs-hair-r" src="img/rosette.png" alt="" width="900" height="900">
+          <img class="rs-layer rs-band" src="img/rosette-band.png" alt="" width="900" height="900">
+          <img class="rs-layer rs-bow" src="img/rosette-bow.png" alt="" width="900" height="900">
+          <img class="rs-layer rs-ribbon" src="img/rosette-ribbon.png" alt="" width="900" height="900">
+        </div>
+      </div>
+      <span class="rs-spark k1"></span><span class="rs-spark k2"></span><span class="rs-spark k3"></span><span class="rs-spark k4"></span>
+    </div>
+
+    <div class="wrap">
+      <p class="greeting rise" style="--d:0"><span class="rule" aria-hidden="true"></span><span class="shine">Welcome to...</span></p>
+      <h1 id="headline">Rotaract Club of Rizal Technological University</h1>
+      <p class="tagline rise" style="--d:5"><strong><em>Ready to make a difference and be a part of change?</em></strong></p>
+      <div class="lead-copy">
+        <p class="lead rise" style="--d:6">We are a university-based service organization sponsored by the Rotary Club of Mandaluyong, Zone 8, District 3800. We bring together passionate young individuals who believe in the power of leadership, fellowship, and service to create meaningful change.</p>
+        <p class="lead rise" style="--d:7">Guided by <em>Service Above Self</em>, we turn ideas into action, connections into opportunities, and service into something that lasts.</p>
+        <p class="lead rise" style="--d:8"><span class="motto">Rise. Lead. Serve.</span> Be part of a community where young leaders grow, purpose thrives, and every act of service makes a difference.</p>
+      </div>
+      <div class="actions rise" style="--d:9">
+        <a class="btn btn-primary pulse" href="join.html">JOIN US</a>
+        <a class="btn btn-light" href="#about">LEARN MORE</a>
+      </div>
+    </div>
+    <svg class="wave-div" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V28C240 -4 480 -4 720 24S1200 56 1440 18V60Z" fill="#FF77B4"/></svg>
+  </section>
+
+  <div class="ticker" aria-label="Quick facts">
+    <div class="ticker-track">
+      <div class="ticker-set"><span>Based at RTU (Boni Campus)</span><span><em>End Polio Now!</em></span><span>Sponsored by: RCM</span><span>District 3800 - Zone 8</span><span><em>Zone Eight, The Great!</em></span></div>
+      <div class="ticker-set" aria-hidden="true"><span>Based at RTU (Boni Campus)</span><span><em>End Polio Now!</em></span><span>Sponsored by: RCM</span><span>District 3800 - Zone 8</span><span><em>Zone Eight, The Great!</em></span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="banner-sec">
+    <div class="wrap">
+      <figure class="banner reveal reveal-pop"><img src="img/rac-banner.jpg" alt="Rotaract Club of Rizal Technological University: Create Lasting Impact, over a collage of member photos" width="1600" height="900" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="wrap split">
+      <div>
+        <h2 class="reveal">Where Potential Turns Into Purpose.</h2>
+        <div class="prose">
+          <p class="reveal" style="--i:1">The Rotaract Club of Rizal Technological University (RAC-RTU) brings together students who aspire to grow as leaders, build meaningful connections, and make a difference beyond the classroom. Through service, fellowship, and shared experiences, members discover their strengths and turn their potential into purposeful action.</p>
+          <p class="reveal" style="--i:2">As part of the global Rotaract community, RAC-RTU connects young leaders to opportunities that extend beyond campus. Through collaborative initiatives and community-centered projects, the club upholds the principle of <strong>Service Above Self</strong>, fostering compassion, encouraging collective action, and creating meaningful change in the communities it serves.</p>
+        </div>
+      </div>
+      <dl class="family">
+        <div class="reveal reveal-right" style="--i:0"><dt>Rotary International</dt><dd>Rotary International is a global humanitarian service organization dedicated to bringing people together to create positive and lasting change. Through its Rotaract program, Rotary extends its mission of service to young leaders, providing opportunities to develop leadership, build meaningful connections, and take part in community initiatives. Together, Rotary and Rotaract form a worldwide network united by the principle of Service Above Self.</dd></div>
+        <div class="reveal reveal-right" style="--i:1"><dt>Rotary Club of Mandaluyong</dt><dd>The Rotary Club of Mandaluyong is the sponsoring club of the Rotaract Club of Rizal Technological University. As part of the Rotary network, it provides guidance, support, and opportunities for collaboration, helping young Rotaractors strengthen their leadership, deepen their commitment to service, and contribute to meaningful community initiatives.</dd></div>
+        <div class="reveal reveal-right" style="--i:2"><dt>Rizal Technological University</dt><dd>Rizal Technological University serves as the home of the RAC-RTU, bringing together students from various colleges. As a university-based organization, RAC-RTU provides students with opportunities to develop their leadership, strengthen their sense of community, and extend their learning beyond the classroom through fellowship and meaningful service.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- AVENUES -->
+  <section id="avenues" class="section avenues">
+    <div class="wrap">
+      <h2 class="reveal">The Four-Way Test</h2>
+      <p class="sub reveal" style="--i:1">Composed of four simple yet meaningful questions, it encourages us to practice honesty, fairness, goodwill, and service in our everyday decisions. For RAC-RTU, this is a guiding principle in every decision, every action, and every act of service.</p>
+      <div class="tiles">
+        <article class="tile tile-q t-club reveal reveal-pop" style="--i:0"><h3>Is it the TRUTH?</h3><p>Honesty and integrity begin with choosing what is truthful in our words, decisions, and actions.</p></article>
+        <article class="tile tile-q t-community reveal reveal-pop" style="--i:1"><h3>Is it FAIR to all concerned?</h3><p>Fairness means respecting different perspectives, treating others with consideration, and making decisions without prejudice.</p></article>
+        <article class="tile tile-q t-intl reveal reveal-pop" style="--i:2"><h3>Will it build GOODWILL and BETTER FRIENDSHIPS?</h3><p>Every interaction is an opportunity to strengthen trust, foster understanding, and build meaningful relationships.</p></article>
+        <article class="tile tile-q t-pro reveal reveal-pop" style="--i:3"><h3>Will it be BENEFICIAL to all concerned?</h3><p>Meaningful service considers the well-being of everyone involved and seeks outcomes that create lasting value for the community.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <i class="float c1"></i><i class="float c2"></i><i class="float c3"></i><i class="float c4"></i>
+    <div class="wrap">
+      <h2 class="reveal reveal-pop">Say hi to the team.</h2>
+      <a class="btn btn-primary pulse reveal reveal-pop" style="--i:1" href="https://www.facebook.com/RAC.RTU" target="_blank" rel="noopener">Message us on Facebook</a>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap foot">
+    <div class="foot-brand"><a class="foot-logo" href="#top"><img src="img/Logo.png" alt="" width="44" height="44"><span>Rotaract Club of RTU</span></a><p class="foot-motto">Lila ang kulay ng pagkakaisa, liwanag ang sagisag ng pag-asa; sa bawat munting gawang may kabuluhan, may bukas na mas maliwanag para sa sambayanan.</p></div>
+    <nav class="foot-col" aria-label="Explore"><h4>Explore</h4><a href="index.html">Home</a><a href="racstory.html">RACStory</a><a href="racfam.html">RACFam</a><a href="rotarchives.html">ROTArchives</a><a href="raconnect.html">RAConnect</a><a href="join.html">Join Us</a></nav>
+    <nav class="foot-col" aria-label="Connect"><h4>Connect</h4><a href="https://www.facebook.com/RAC.RTU" target="_blank" rel="noopener">Facebook</a><a href="https://www.rtu.edu.ph" target="_blank" rel="noopener">RTU website</a></nav>
+    <div class="foot-col foot-contact"><h4>Contact Information</h4><p><strong>Address:</strong> Boni Avenue, Mandaluyong City, Metro Manila, Philippines</p><p><strong>Gmail:</strong> <a href="mailto:weareracrtu@gmail.com">weareracrtu@gmail.com</a></p><p><strong>FB:</strong> <a href="https://www.facebook.com/RAC.RTU" target="_blank" rel="noopener">Rotaract Club of Rizal Technological University</a></p></div>
+  </div>
+  <div class="wrap foot-bottom"><span>Project of RAC-RTU ‘26 - ‘27</span><span class="foot-motto2"><strong><em>Servitium Supra Se</em></strong><br>Service Above Self</span></div>
+</footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- loader ---- */
+  var loader = document.getElementById('loader');
+  var hidden = false;
+  function hide() {
+    if (hidden || !loader) return;
+    hidden = true;
+    loader.classList.add('done');
+    document.documentElement.classList.add('ready');
+    var hd = document.querySelector('header.site');
+    hd.classList.add('peek');
+    setTimeout(function () { hd.classList.remove('peek'); }, 3200);
+    setTimeout(function () { loader.remove(); }, 750);
+  }
+  window.addEventListener('load', function () {
+    setTimeout(hide, Math.max(0, 3300 - performance.now()));
+  });
+  setTimeout(hide, 4300);
+
+  /* ---- headline: words slide up one by one ---- */
+  var h1 = document.getElementById('headline');
+  var words = h1.textContent.trim().split(/\s+/);
+  h1.setAttribute('aria-label', h1.textContent.trim());
+  h1.innerHTML = words.map(function (w, i) {
+    return '<span class="w" aria-hidden="true"><span style="--i:' + i + '">' + w + '</span></span>';
+  }).join(' ');
+
+  /* ---- scroll reveal ---- */
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.18, rootMargin: '0px 0px -6% 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ---- progress bar + nav shadow ---- */
+  var bar = document.querySelector('.progress');
+  var header = document.querySelector('header.site');
+  function onScroll() {
+    var h = document.documentElement;
+    var p = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight);
+    bar.style.transform = 'scaleX(' + p + ')';
+    header.classList.toggle('scrolled', h.scrollTop > 20);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---- mobile menu ---- */
+  var btn = document.querySelector('.menu-btn'), menu = document.getElementById('menu');
+  function setMenu(o) { header.classList.toggle('open', o); btn.setAttribute('aria-expanded', o); btn.setAttribute('aria-label', o ? 'Close menu' : 'Open menu'); }
+  btn.addEventListener('click', function () { setMenu(!header.classList.contains('open')); });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  document.addEventListener('click', function (e) { if (!header.contains(e.target)) setMenu(false); });
+
+  /* ---- current section in nav ---- */
+  var spy = {};
+  document.querySelectorAll('.links a[href^="#"]').forEach(function (a) { spy[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var so = new IntersectionObserver(function (en) {
+      en.forEach(function (e) { if (e.isIntersecting) Object.keys(spy).forEach(function (k) { spy[k].classList.toggle('active', k === e.target.id); }); });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    Object.keys(spy).forEach(function (k) { so.observe(document.getElementById(k)); });
+    new IntersectionObserver(function (en) { if (en[0].isIntersecting) Object.keys(spy).forEach(function (k) { spy[k].classList.remove('active'); }); }, { rootMargin: '-45% 0px -50% 0px' }).observe(document.getElementById('welcome'));
+  }
+
+
+  if (reduce) return;
+
+  /* ---- tile tilt ---- */
+  document.querySelectorAll('.tile').forEach(function (t) {
+    t.addEventListener('pointermove', function (e) {
+      if (e.pointerType === 'touch') return;
+      var r = t.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      t.style.setProperty('--rx', (-y * 8).toFixed(2) + 'deg');
+      t.style.setProperty('--ry', (x * 8).toFixed(2) + 'deg');
+    });
+    t.addEventListener('pointerleave', function () {
+      t.style.setProperty('--rx', '0deg'); t.style.setProperty('--ry', '0deg');
+    });
+  });
+
+})();
+</script>
+<script>
+(function(){
+  document.querySelectorAll('.dd-btn').forEach(function(b){
+    b.addEventListener('click',function(e){
+      e.stopPropagation();
+      var dd=b.parentNode, o=!dd.classList.contains('open');
+      document.querySelectorAll('.dd.open').forEach(function(x){x.classList.remove('open');x.querySelector('.dd-btn').setAttribute('aria-expanded','false');});
+      dd.classList.toggle('open',o); b.setAttribute('aria-expanded',o);
+    });
+  });
+  document.addEventListener('click',function(e){ if(!e.target.closest('.dd')) document.querySelectorAll('.dd.open').forEach(function(x){x.classList.remove('open');x.querySelector('.dd-btn').setAttribute('aria-expanded','false');}); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') document.querySelectorAll('.dd.open').forEach(function(x){x.classList.remove('open');x.querySelector('.dd-btn').setAttribute('aria-expanded','false');}); });
+})();
+</script>
+</body>
+</html>
