@@ -500,3 +500,33 @@ main .officer p,main .role,.cta-band p,.banner,.mantra,.traits,.crumb,.officer .
 /* hero mascot: intact artwork, only the gold ribbon sways (SVG displacement, nothing is cut apart) */
 .rs-svg{position:absolute;left:-4.3%;top:0;width:108.6%;height:100%;display:block;overflow:visible;pointer-events:none;user-select:none;}
 .rosette .rs-spark.k2{right:-7%;top:46%;}
+
+/* ================= DISPATCH POSTS (ROTArchives) ================= */
+.posts{display:grid;gap:clamp(36px,5vw,64px);margin:clamp(30px,4vw,48px) 0 clamp(30px,4vw,44px);}
+.post{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);align-items:start;padding:clamp(20px,3vw,34px);border:1px solid var(--line);border-radius:34px 34px 34px 90px;background:color-mix(in srgb,var(--text) 3%,var(--bg));}
+.post.flip .post-media{order:2;} .post.flip .post-body{order:1;} .post.flip{grid-template-columns:minmax(0,7fr) minmax(0,5fr);}
+.post.wide{grid-template-columns:1fr;}
+.post.wide .post-body{max-width:78ch;}
+.post-media{position:sticky;top:calc(var(--nav-h) + 20px);}
+.post-fig{margin:0;position:relative;border-radius:26px;overflow:hidden;background:var(--plum-2);box-shadow:0 18px 40px rgba(43,10,38,.22);}
+.post-fig .shot-btn{position:relative;display:block;inset:auto;height:auto;}
+.post-fig img{width:100%;height:auto;display:block;transition:transform .7s var(--ease);} .post-fig:hover img{transform:scale(1.04);}
+.post-tag{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--plum);background:var(--gold);padding:5px 14px;border-radius:999px;margin-bottom:14px;}
+.post h3{font-weight:800;font-size:clamp(24px,3vw,36px);max-width:22ch;margin-bottom:18px;}
+.post.wide h3{max-width:30ch;}
+.post-body p{color:var(--text-soft);margin-bottom:14px;} .post-body strong{color:var(--text);}
+.post-body .post-lead{font-size:1.08em;color:var(--text);}
+.post-callout{font-weight:700;color:var(--text)!important;border-left:4px solid var(--pink);padding:6px 0 6px 16px;margin:20px 0!important;font-size:1.08em;}
+.post blockquote{margin:20px 0 6px;padding:20px 22px;border-radius:22px;background:color-mix(in srgb,var(--pink) 14%,transparent);border-left:5px solid var(--berry);}
+.post blockquote p:last-of-type{margin-bottom:10px;} .post blockquote cite{display:block;font-style:normal;font-weight:700;color:var(--text);}
+.post blockquote .q-big{font-family:'Bricolage Grotesque','Trebuchet MS',system-ui,sans-serif;font-size:1.25em;font-weight:700;color:var(--text);line-height:1.3;}
+.post blockquote .q-big span{display:block;font-size:.7em;font-weight:600;color:var(--text-soft);margin-top:6px;}
+.post-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.post-gallery .shot{aspect-ratio:4/3;}
+@media (max-width:900px){
+  .post,.post.flip{grid-template-columns:1fr;} .post.flip .post-media,.post.flip .post-body{order:0;}
+  .post-media{position:static;max-width:520px;}
+  .post-gallery{grid-template-columns:1fr 1fr;}
+  .post{border-radius:28px 28px 28px 60px;}
+}
+.post-body,.post-body p{text-align:left;}
