@@ -530,3 +530,36 @@ main .officer p,main .role,.cta-band p,.banner,.mantra,.traits,.crumb,.officer .
   .post{border-radius:28px 28px 28px 60px;}
 }
 .post-body,.post-body p{text-align:left;}
+
+/* simpler navbar brand: plain wordmark, no pill / gradient / shimmer */
+.brand-text{background:none;padding:0;border-radius:0;box-shadow:none;}
+.brand-text b{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:var(--text);animation:none;
+  font-size:20px;font-weight:800;letter-spacing:-.01em;transition:color .25s;}
+.brand:hover .brand-text b{color:var(--berry);}
+@media (prefers-color-scheme:dark){.brand:hover .brand-text b{color:var(--pink);}}
+
+/* ---- gallery layouts for the extra ROTArchives sections ---- */
+.post .post-gallery{grid-column:1/-1;}
+.pg-3{grid-template-columns:repeat(3,1fr);}
+.pg-5,.pg-7{grid-template-columns:repeat(12,1fr);}
+.pg-5 .shot{grid-column:span 4;} .pg-5 .shot:nth-child(n+4){grid-column:span 6;}
+.pg-7 .shot{grid-column:span 4;} .pg-7 .shot:nth-child(n+4){grid-column:span 3;}
+.cards .shot{aspect-ratio:1200/630;}
+.portrait .shot{aspect-ratio:4/5;}
+.jump-wrap{margin:clamp(26px,4vw,40px) 0 30px;}
+.jump{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+.jump .shot{aspect-ratio:3/4;}
+@media (max-width:900px){
+  .pg-3,.pg-5,.pg-7{grid-template-columns:1fr 1fr;}
+  .pg-5 .shot,.pg-5 .shot:nth-child(n+4),.pg-7 .shot,.pg-7 .shot:nth-child(n+4){grid-column:auto;}
+  .pg-3 .shot:last-child,.pg-5 .shot:last-child,.pg-7 .shot:last-child{grid-column:1/-1;}
+  .jump{grid-template-columns:repeat(3,1fr);}
+}
+@media (max-width:560px){
+  .pg-7.cards{grid-template-columns:1fr;} .pg-7.cards .shot:last-child{grid-column:auto;}
+  .jump{grid-template-columns:1fr 1fr;}
+}
+
+/* posts that also carry a full-width gallery: keep the side image from sliding over it, and keep the gallery last */
+.post:has(.post-gallery) .post-media{position:static;}
+.post .post-gallery{order:3;}
